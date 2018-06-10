@@ -11,7 +11,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Willy Lu Lu</title>
@@ -35,10 +35,36 @@
         </div>
     </div>
     <div class = "seg seg2" id="seg2">
-        <div class="container animated fadeIn">
-            666
+        <div class="container">
+            <div class="row">
+                <div class="info-col col s5">
+                    <div id='avatar' class='avatar row'>
+                        <img style="border-radius:20px;" width=80% height=80% src="img/myAvatar.png" />
+                    </div>
+                    <div class='link-helper'>
+                        <div id='links' class="links row">
+                            <div class='col s2'></div>
+                            <div class='col s2'>
+                                <a href="https://www.facebook.com/willy.lulu" style="margin:5px;"><img src="img/if_square-facebook_317727.svg"/></a>
+                            </div>
+                            <div class='col s2'>
+                                <a href="https://www.linkedin.com/in/lu-lu-willy-23046613a/" style="margin:5px;"><img src="img/if_square-linkedin_317725.svg"/></a>
+                            </div>
+                            <div class='col s2'>
+                                <a href="https://github.com/willylulu" style="margin:5px;"><img src="img/if_github_317712.svg"/></a>
+                            </div>
+                            <div class='col s2'>
+                                <a href="mailto:maya6282@gmail.com" style="margin:5px;"><img width=35 height=35 src="img/gmail.svg"/></a>
+                            </div>
+                            <div class='col s2'></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-col col s5">1</div>
+            </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
