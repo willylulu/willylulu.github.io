@@ -25,6 +25,11 @@ $.fn.extend({
   },
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+});
+
 $("[href='#seg2']").click(function(){
     $("#avatar").animateCss('bounceInLeft');
     $("#links").animateCss('bounceInLeft');
