@@ -28,6 +28,9 @@ $.fn.extend({
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.collapsible');
     var instances = M.Collapsible.init(elems);
+    
+    var elems = document.querySelectorAll('.tabs');
+    var instances = M.Tabs.init(elems);
 });
 
 $("[href='#seg2']").click(function(){
