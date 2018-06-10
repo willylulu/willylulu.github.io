@@ -35,5 +35,5 @@ $("#links div").hover(function(){
 });
 
 $("#avatar").hover(function(){
-    $(this).animateCss("shake");
+    $(this).animateCss("bounce");
 });
