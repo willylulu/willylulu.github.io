@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
 $("[href='#seg2']").click(function(){
     $("#avatar").animateCss('bounceInLeft');
     $("#links").animateCss('bounceInLeft');
+    showList();
 });
 
 $("#links div").hover(function(){
@@ -45,3 +46,9 @@ $("#links div").hover(function(){
 $("#avatar").hover(function(){
     $(this).animateCss("bounce");
 });
+
+function showList(){
+    setTimeout(function(){$($('.info-list')[0]).animateCss("bounceInRight")}, 150);
+    setTimeout(function(){$($('.info-list')[1]).animateCss("bounceInRight")}, 300);
+    setTimeout(function(){$($('.info-list')[2]).animateCss("bounceInRight")}, 450);
+}
