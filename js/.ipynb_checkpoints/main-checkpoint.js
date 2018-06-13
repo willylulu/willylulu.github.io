@@ -52,3 +52,8 @@ function showList(){
     setTimeout(function(){$($('.info-list')[4]).show();$($('.info-list')[4]).animateCss("bounceInRight")}, 750);
     
 }
+
+$('.page-but').click(function(){
+    var id = $(this)[0].hash;
+    $(id).animateCss('fadeIn');
+});
