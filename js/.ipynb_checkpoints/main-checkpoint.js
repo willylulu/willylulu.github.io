@@ -26,11 +26,7 @@ $.fn.extend({
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems);
-    
-    var elems = document.querySelectorAll('.tabs');
-    var instances = M.Tabs.init(elems);
+    M.AutoInit();
 });
 
 $("[href='#seg2']").click(function(){
@@ -48,7 +44,11 @@ $("#avatar").hover(function(){
 });
 
 function showList(){
-    setTimeout(function(){$($('.info-list')[0]).animateCss("bounceInRight")}, 150);
-    setTimeout(function(){$($('.info-list')[1]).animateCss("bounceInRight")}, 300);
-    setTimeout(function(){$($('.info-list')[2]).animateCss("bounceInRight")}, 450);
+    $('.info-list').hide();
+    setTimeout(function(){$($('.info-list')[0]).show();$($('.info-list')[0]).animateCss("bounceInRight")}, 150);
+    setTimeout(function(){$($('.info-list')[1]).show();$($('.info-list')[1]).animateCss("bounceInRight")}, 300);
+    setTimeout(function(){$($('.info-list')[2]).show();$($('.info-list')[2]).animateCss("bounceInRight")}, 450);
+    setTimeout(function(){$($('.info-list')[3]).show();$($('.info-list')[3]).animateCss("bounceInRight")}, 600);
+    setTimeout(function(){$($('.info-list')[4]).show();$($('.info-list')[4]).animateCss("bounceInRight")}, 750);
+    
 }

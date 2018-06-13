@@ -26,6 +26,12 @@ nav{
     background-size: 100vw 100vh;
 }
 
+.seg3{
+    background:url(https://images.pexels.com/photos/7065/space-desk-office-hero-7065.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
 .seg1 .container{
     max-width: 40%;
     padding:15px;
@@ -39,6 +45,14 @@ nav{
 }
 
 .seg2 .container{
+    max-width: 80%;
+    padding:15px;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+}
+
+.seg3 .container{
     max-width: 80%;
     padding:15px;
     text-align:center;
